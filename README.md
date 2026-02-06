@@ -1,6 +1,7 @@
 # Library Desk Agent (AI Agent + Tools + SQLite)
 
-![Library Desk Agent UI](docs/ui.png)
+<img width="1863" height="855" alt="image" src="https://github.com/user-attachments/assets/d9f93d21-1aa4-4fa7-a14a-cbd9fdf5f9c2" />
+
 
 This project is a local “Library Desk Agent” chat application that answers library questions and performs inventory/order actions by calling **backend tools** that **read/write a SQLite database**. The core idea is that the assistant never “guesses” database facts—whenever the user asks about books, stock, orders, or prices, the agent uses tools that query/modify the DB and then summarizes the results back to the user.
 
