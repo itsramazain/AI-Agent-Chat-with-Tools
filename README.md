@@ -2,7 +2,6 @@
 
 <img width="1863" height="855" alt="image" src="https://github.com/user-attachments/assets/d9f93d21-1aa4-4fa7-a14a-cbd9fdf5f9c2" />
 
-
 This project is a local “Library Desk Agent” chat application that answers library questions and performs inventory/order actions by calling **backend tools** that **read/write a SQLite database**. The core idea is that the assistant never “guesses” database facts—whenever the user asks about books, stock, orders, or prices, the agent uses tools that query/modify the DB and then summarizes the results back to the user.
 
 ---
@@ -408,24 +407,15 @@ The screenshot at the top demonstrates:
   - restocking and searching by author
   - checking order status
 
-To display it in this README, store the image at:
-
-`docs/ui.png`
-
-and keep the Markdown image reference:
-
-`![Library Desk Agent UI](docs/ui.png)`
-
 to Run:
 
-1.
+1.`cd app; npm install; npm run dev`
 
-cd app; npm install; npm run dev
+2.```
 
-2.
+    copy .env.example .env
+    uvicorn server.main:app --reload --port 8000
 
-copy .env.example .env
+```
 
-# edit .env and set OPENAI_API_KEY=your_key
-
-uvicorn server.main:app --reload --port 8000
+```
