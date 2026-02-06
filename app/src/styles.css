@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial;
+  background: #0b0f17;
+  color: #e7eaf0;
+}
+a {
+  color: inherit;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100vh;
+}
+.sidebar {
+  border-right: 1px solid #1b2333;
+  padding: 14px;
+  background: #0e1420;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.main {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.card {
+  background: #0f1726;
+  border: 1px solid #1b2333;
+  border-radius: 12px;
+  padding: 12px;
+}
+.btn {
+  background: #1b2a44;
+  border: 1px solid #2a3b5c;
+  color: #e7eaf0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(1.1);
+}
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #2a3b5c;
+  background: #0b1220;
+  color: #e7eaf0;
+}
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sessions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: auto;
+}
+.sessionItem {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #1b2333;
+  background: #0b1220;
+  cursor: pointer;
+}
+.sessionItem.active {
+  border-color: #4d7cff;
+}
+
+.chat {
+  padding: 14px;
+  overflow: auto;
+}
+.msg {
+  max-width: 820px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin: 8px 0;
+  border: 1px solid #1b2333;
+}
+.msg.user {
+  background: #0b1220;
+  margin-left: auto;
+}
+.msg.assistant {
+  background: #0f1726;
+  margin-right: auto;
+}
+.meta {
+  opacity: 0.7;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.composer {
+  border-top: 1px solid #1b2333;
+  padding: 12px;
+  background: #0e1420;
+}
+.small {
+  opacity: 0.8;
+  font-size: 12px;
+}
